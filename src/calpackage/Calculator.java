@@ -11,7 +11,7 @@ public class Calculator {
 		num1=sc.nextInt();
 		System.out.println("Enter number2 : ");
 		num2=sc.nextInt();
-		System.out.println("Enter the operator + for adding and - for subtraction: ");
+		System.out.println("Enter the operator + for adding and - for subtraction (*) for multiplication and '/' for divide : ");
 		char op = sc.next().charAt(0);
 		
 		switch(op)
@@ -21,6 +21,12 @@ public class Calculator {
 			break;
 		case '-':
 			output=num1-num2;
+			break;
+		case '*':
+			output = num1*num2;
+			break;
+		case '/':
+			output= num1/num2;
 			break;
 			
 		default :
